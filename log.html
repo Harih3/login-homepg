@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('img.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #fff;
+        }
+        .login-container {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            width: 400px;
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 70%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #1abc9c;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background: #16a085;
+        }
+        .login-container .forgot-password {
+            display: block;
+            margin: 10px 0;
+            color: #1abc9c;
+        }
+        .login-container .social-login {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .login-container .social-login a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .login-container .social-login a.google {
+            background: #dd4b39;
+        }
+        .login-container .social-login a.facebook {
+            background: #3b5998;
+        }
+        .login-container .social-login a.apple {
+            background: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome Back!</h1>
+        <form action="home.html" method="post">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+        
+        <a href="https://accounts.google.com/v3/signin/challenge/pwd?TL=ALoj5AqIlu1vtFWS5DSahcqIRyy56g8VDKqaOzJ11BN_0RvHrzQmkEuVGpGltDi2&cid=1&continue=https://myaccount.google.com/signinoptions/password&flowName=GlifWebSignIn&hl=en_US&ifkv=AdF4I74OtRpubUXr41lL7n_YwwdaivesgnaBPYMvpYKqMLVaP1u_6cPFUSGG7fbCMS3Q-diDzN3N-A&kdi=CAM&rart=ANgoxce1VV1jwBY7bnlbOyou8q0uKdazAjE1X2Sha1mh44vB4lhlreJzlDzGIoioGTlWHItwke3T-eWes3Gk23rzHczuuAUA30tnmB_pE-uS-UUS2fSgJHo&rpbg=1&sarp=1&scc=1&service=accountsettings" class="forgot-password">Forgot Password?</a>
+        <div class="social-login">
+            <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" class="google">Login with Google</a>
+            <a href="https://www.facebook.com/login/" class="facebook">Login with Facebook</a>
+            <a href="https://support.apple.com/en-in/111001" class="apple">Login with Apple</a>
+        </div>
+    </div>
+</body>
+</html>
